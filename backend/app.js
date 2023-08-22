@@ -16,10 +16,6 @@ app.use(bodyParser.urlencoded({
 // app.use(bodyParser.json())
 mongoose.set('strictQuery', true)
 mongoose.connect("mongodb://localhost:27017/todolistDB", {useNewUrlParser: true});
-// const connect = async ()=>{
-//     mongoose.connect(URL,await console.log("connected to database"), {useNewUrlParser: true});
-//     } 
-// // mongoose.connect("mongodb+srv://hardebite:Adexturbo@cluster0.msmirmh.mongodb.net/todolistDB")
 const itemsSchema ={
   name:String
 };
